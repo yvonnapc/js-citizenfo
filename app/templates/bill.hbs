@@ -1,10 +1,11 @@
 <h1>Bill Info</h1>
 {{#each model as |bill|}}
+
+  <h4>Official Title: {{bill.official_title}}</h4>
+  <h5>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h5>
+  <h5>Introduced On: {{bill.introduced_on}}</h5>
+  <h5>Last Action: {{bill.last_action_at}}</h5>
+  <h5>History: vetoed:{{bill.history.vetoed}}<br>
+               active: {{bill.history.active}}</h5>
   <li><a href={{bill.urls.govtrack}}>{{bill.short_title}}</a></li>
-  <li>Official Title: {{bill.official_title}}</li>
-  <li>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</li>
-  <li>Introduced On: {{bill.introduced_on}}</li>
-  <li>Last Action: {{bill.last_action_at}}</li>
-  <li>History: vetoed:{{bill.history.vetoed}}<br>
-               active: {{bill.history.active}}</li>
 {{/each}}

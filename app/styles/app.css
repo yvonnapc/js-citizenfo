@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+h1, h3 {
+  font-weight: normal;
+}
+
+p {
+  font-weight: lighter;
+}
+
 h1 {
   text-align: center;
 }

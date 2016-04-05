@@ -1,8 +1,8 @@
 <h1>{{model.params.keyword}}Results</h1>
 <ul>
   {{#each model as |bill|}}
-  <li><strong>Title:</strong> {{bill.short_title}}</li>
-      <strong>Id:</strong> {{bill.bill_id}}
+  <h3><strong>Title:</strong> {{bill.short_title}}</h3>
+      <h4><strong>Id:</strong> {{bill.bill_id}}</h4>
   <br>
   <br>
   {{/each}}
