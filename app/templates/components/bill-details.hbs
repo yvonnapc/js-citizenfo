@@ -1,0 +1,9 @@
+<form>
+  <div class="form-group">
+    <h4>Enter a Bill ID from Above</h4>
+    <label for="billId">Bill ID: </label>
+      {{input value=billId id="billId"}}
+  </div>
+
+  <button class="btn btn-primary"{{action 'getBillDetails'}}>Submit</button>
+</form>
